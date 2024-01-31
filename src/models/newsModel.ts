@@ -3,7 +3,7 @@ import { type InferSchemaType, Schema, model } from "mongoose";
 const newsSchema = new Schema({
   title: {
     type: String,
-    require: [true, "A todo must have a title!"],
+    require: [true, "A todo must have a title"],
     trim: true,
     maxlength: [120, "A news title can only have a max of 120 chars"],
     minlength: [3, "A news can only have a min of 3 chars"],
